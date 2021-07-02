@@ -8,6 +8,7 @@ const page = document.querySelector('body');
 
 const userTheme = localStorage.getItem('userTheme');
 page.classList.add(`${userTheme}`);
+console.log(userTheme);
 
 if (userTheme === Theme.DARK) {
   switcherButton.checked = true;
@@ -24,7 +25,6 @@ const changePageTheme = function () {
     userChosenTheme = page.classList.toggle('dark-theme');
     userChosenTheme = page.classList.remove('light-theme');
     localStorage.setItem('userTheme', Theme.DARK);
-    // localStorage.setItem('checkbox', 'switcherButton.checked === true');
   }
 };
 
