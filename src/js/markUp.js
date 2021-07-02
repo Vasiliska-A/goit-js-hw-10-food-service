@@ -1,7 +1,7 @@
-import menuItems from './menu.json';
-import menuItemTmpl from './templates/menu-Item.hbs';
+import menuItems from '../menu.json';
+import menuItemTmpl from '../templates/menu-Item.hbs';
 
-import './sass/main.scss';
+import '../sass/main.scss';
 
 const menuList = document.querySelector('.js-menu');
 
